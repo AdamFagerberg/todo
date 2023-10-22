@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300;700&display=swap');
+/* 300, 700 Playpen Sans */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Playpen Sans", sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-top: 20vh;
+}
+
+.inputcontainer {
+    margin-top: 5vh;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#todoinput {
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    width: 85%;
+    height: 40px;
+    text-align: center;
+    font-family: "Playpen Sans", sans-serif;
+    font-size: 1rem;
+    caret-color: black;
+    margin-right: 20px;
+}
+
+#todoinput::placeholder {
+    font-family: "Playpen Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: black;
+}
+
+#addtodobtn {
+    height: 38px;
+    width: 38px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#addtodobtn:hover {
+    background-color: black;
+    color: white;
+}
+
+#todocontainer {
+    margin-top: 40px;
+    height: auto;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.task {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.task li {
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+}
+
+.task button {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: 2px solid  black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task .checkTask {
+    margin-right: 5px;
+}
+
+.task .checkTask:hover {
+    background-color: rgba(64, 255, 0, 0.627);
+    border-color: rgba(64, 255, 0, 1);
+}
+
+.task .deleteTask:hover {
+    background-color: rgba(255, 0, 0, 0.627);
+    border-color: rgba(255, 0, 0, 1);
+}
